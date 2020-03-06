@@ -41,6 +41,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                 nrp.setText("");
                 nama.setText("");
                 prodi.setText("");
+                insert = (Button)findViewById(R.id.btnInsert);
             }
         });
     }

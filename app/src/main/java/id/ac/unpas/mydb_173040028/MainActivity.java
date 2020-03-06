@@ -18,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.isView);
-        listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 , arrMenu));
+        listView.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1 , arrMenu));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int positition, long id ){
-                switch (positition) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id ){
+                switch (position) {
                     case 0 :
                         startActivity(new Intent(MainActivity.this, AddMahasiswaActivity.class));
                         break;

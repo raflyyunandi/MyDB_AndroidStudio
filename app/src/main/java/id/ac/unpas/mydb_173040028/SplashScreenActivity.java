@@ -28,7 +28,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
-
                 }
             }
         };

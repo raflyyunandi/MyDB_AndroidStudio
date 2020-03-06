@@ -27,7 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void creatMahasiswaTable(SQLiteDatabase database){
-        database.execSQL("CREATE TABLE if not exist" + NAMA_TABLE +"(nrp TEXT PRIMARY KEY, nama TEXT, prodi TEXT);");
+        database.execSQL("CREATE TABLE if not exists " + NAMA_TABLE +"(nrp TEXT PRIMARY KEY, nama TEXT, prodi TEXT);");
         Log.e("Message", "Success");
     }
 
