@@ -41,6 +41,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public void updateDataMahasiswa(SQLiteDatabase database, String nrp, String nama, String prodi){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("nrp",nrp);
+        contentValues.put("nama",nama);
+        contentValues.put("prodi",prodi);
+        database.update(NAMA_TABLE, contentValues, "nrp = " + nrp, null);
+        Log.e("Messange", "Success");
+
+    }
+
     public void deleteDataMahasiswa(SQLiteDatabase database, String nrp){
         database.delete(NAMA_TABLE, "nrp =" +nrp, null);
     }

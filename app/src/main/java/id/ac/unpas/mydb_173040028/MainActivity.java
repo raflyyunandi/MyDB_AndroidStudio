@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     ListView listView;
-    String arrMenu[] = {"Add Data", "View Data", "Logout"};
+    String arrMenu[] = {"Add Data", "View Data", "Edit Data", "Delete Data", "Logout"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ViewMahasiswaActivity.class));
                         break;
                     case 2 :
+                        startActivity(new Intent(MainActivity.this, EditMahasiswaActivity.class));
+                        break;
+                    case 3 :
+                        startActivity(new Intent(MainActivity.this, DeleteMahasiswaActivity.class));
+                        break;
+                    case 4 :
                         Session.logout(MainActivity.this);
                         startActivity(new Intent(MainActivity.this, SignInActivity.class));
                         finish();
