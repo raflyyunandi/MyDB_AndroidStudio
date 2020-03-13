@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".AddMahasiswaActivity">
+    tools:context="id.ac.unpas.mydb_173040028.AddMahasiswaActivity">
 
     <EditText
         android:id="@+id/nrpMhs"

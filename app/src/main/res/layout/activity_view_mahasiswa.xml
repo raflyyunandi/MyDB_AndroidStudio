@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".ViewMahasiswaActivity">
+    tools:context="id.ac.unpas.mydb_173040028.ViewMahasiswaActivity">
 
     <ListView
-        android:id="@+id/isMHS"
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

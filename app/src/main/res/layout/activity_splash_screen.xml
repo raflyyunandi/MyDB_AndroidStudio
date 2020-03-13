@@ -4,14 +4,13 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".SplashScreenActivity">
+    tools:context="id.ac.unpas.mydb_173040028.SplashScreenActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
+        android:layout_height="match_parent"
         android:background="@drawable/ic_launcher_background"
         android:foreground="@drawable/ic_launcher_foreground"
-        />
+        android:scaleType="fitXY" />
 
 </LinearLayout>

@@ -22,6 +22,7 @@ public class ViewMahasiswaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_mahasiswa);
+        myListView = (ListView) findViewById(R.id.listView);
         databaseHelper = new DatabaseHelper(this);
         database = databaseHelper.getWritableDatabase();
 

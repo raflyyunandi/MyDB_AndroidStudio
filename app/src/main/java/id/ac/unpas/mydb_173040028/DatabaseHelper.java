@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "DataMahasiswa";
-    public final static String TABLES[] = {"nrp", "nama" , "produi"};
+    public final static String TABLES[] = {"nrp", "nama" , "prodi"};
     private final static String NAMA_TABLE = "table_mahasiswa";
 
     public DatabaseHelper(Context context){
